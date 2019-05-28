@@ -1,7 +1,7 @@
 import random
 
 def estrofe1():
-	return verso() + verso() + verso() + verso()
+	return verso()+ "<br>" + verso() + "<br>" + verso() + "<br>" + verso() + "<br> <br>"
 	return """
 		Amo-te tanto, meu amor... nao canto
 		O humano coracao com mais verdade...
@@ -10,7 +10,7 @@ def estrofe1():
 	"""
 
 def estrofe2():
-	return verso() + verso() + verso() + verso()
+	return verso()+ "<br>" + verso() + "<br>" + verso() + "<br>" + verso() + "<br> <br>"
 	return """
 		Amo-te afim, de um calmo amor prestante,
 		E te amo alem, presente na saudade.
@@ -19,7 +19,7 @@ def estrofe2():
 	"""
 
 def estrofe3():
-	return verso() + verso() + verso()
+	return verso()+ "<br>" + verso() + "<br>" + verso() + "<br> <br>"
 	return """
 		Amo-te como um bicho, simplesmente,
 		De um amor sem misterio e sem virtude
@@ -27,7 +27,7 @@ def estrofe3():
 	"""
 
 def estrofe4():
-	return verso() + verso() + verso()
+	return verso()+ "<br>" + verso() + "<br>" + verso() + "<br> <br>"
 	return """
 		E de te amar assim muito amiude,
 		que um dia em teu corpo de repente
@@ -35,7 +35,7 @@ def estrofe4():
 	"""
 
 def verboInfinitivo():
-	lista = ["amar", "beijar", "ver", "viver", "contar", "dancar", "voar"]
+	lista = ["amar", "beijar", "ver", "viver", "contar", "dancar", "voar", "sonhar", "buscar"]
 	return random.choice(lista)
 
 def verboConjugado():
@@ -43,10 +43,14 @@ def verboConjugado():
 	return random.choice(lista)
 
 def substantivo():
-	lista = ["pudim", "calca de brim", "aipim", "ceu", "no beleleu", "pastel", "irmao do jorel"]
+	lista = ["pudim", "aipim", "ceu", "no beleleu", "pastel", "irmao do jorel", "doguinho", "passarinho", "carinho", "baixinho"]
 	return random.choice(lista)
 
 def verso():
 	return verboConjugado() + " " + verboInfinitivo() + " " + substantivo() + "\n"
 
-print estrofe1(), "\n", estrofe2(), "\n", estrofe3(), "\n", estrofe4()
+inicio = "<html> <head> </head> <body>"
+fim = "</body> </html>"
+
+print inicio, estrofe1(), "\n", estrofe2(), "\n", estrofe3(), "\n", estrofe4(), fim
+
