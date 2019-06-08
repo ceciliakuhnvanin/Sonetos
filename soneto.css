@@ -23,3 +23,7 @@ body{
 	font-size: 30px;
 	font-family: 'Roboto Slab', serif;
 }
+
+#refresh {
+	cursor: pointer;
+}

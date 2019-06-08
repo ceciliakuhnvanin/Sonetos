@@ -43,14 +43,29 @@ def verboConjugado():
 	return random.choice(lista)
 
 def substantivo():
-	lista = ["pudim", "aipim", "ceu", "no beleleu", "pastel", "irmao do jorel", "doguinho", "passarinho", "carinho", "baixinho"]
+	lista = ["pudim", 
+			"aipim", 
+			"ceu", 
+			"no beleleu", 
+			"pastel", 
+			"irmao do jorel", 
+			"doguinho", 
+			"passarinho", 
+			"carinho", 
+			"baixinho"]
 	return random.choice(lista)
 
 def verso():
 	return verboConjugado() + " " + verboInfinitivo() + " " + substantivo() + "\n"
 
-inicio = "<html> <head> </head> <body>"
-fim = "</body> </html>"
+def imprime():
+	inicio = "<html> <head> </head> <body>"
+	fim = "</body> </html>"
+	print inicio, getSoneto(), fim
 
-print inicio, estrofe1(), "\n", estrofe2(), "\n", estrofe3(), "\n", estrofe4(), fim
+def getSoneto():
+	return estrofe1(), "\n", estrofe2(), "\n", estrofe3(), "\n", estrofe4()
+
+def getSonetoJson():
+	return {'estrofe1': estrofe1(), 'estrofe2': estrofe2(), 'estrofe3': estrofe3(), 'estrofe4': estrofe4()}
 
