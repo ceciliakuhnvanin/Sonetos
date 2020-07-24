@@ -10,12 +10,26 @@ window.onload = function() {
 }
 
 $("#refresh").click(function() {
+	
 	criaSoneto();
 });
 
+
+
+
+
+
+const criaTitulo = () => {
+	$('.titulo').html( "Soneto da " + tituloSubstantivo() + " " + tituloAdjetivo())
+}
+
 const criaSoneto = () => {
+	criaTitulo();
 	 $('#poem').html(estrofe1() + estrofe2() + estrofe3() + estrofe4())
 }
+
+
+
 
 
 const estrofe1 = () => {
@@ -36,10 +50,18 @@ const estrofe4 = () => {
 
 
 
+const tituloSubstantivo = () => {
+	let lista =  ["Paz", "Calma", "Esperança", "Genialidade", "Sabedoria", "Beleza"]
+	return lista[Math.floor(Math.random()*lista.length) ];
+}
 
+const tituloAdjetivo = () => {
+	let lista = ["Grandiosa", "Angelical", "Esplêndida", "Inspiradora", "Magnifica", "Reluzente", "Sagaz"]
+	return lista[Math.floor(Math.random()*lista.length) ];
+}
 
 const verboInfinitivo = () => {
-	let lista = ["amar", "beijar", "ver", "viver", "contar", "dancar", "voar", "sonhar", "buscar"];
+	let lista = ["amar", "beijar", "ver", "viver", "contar", "dançar", "voar", "sonhar", "buscar"];
 	return lista[Math.floor(Math.random()*lista.length) ];
 }
 
@@ -49,9 +71,10 @@ const verboConjugado = () => {
 }
 
 const substantivo = () => {
-	let lista = ["pudim", "aipim", "ceu", "no beleleu", "pastel", "irmao do jorel", "doguinho", "passarinho", "carinho", "baixinho"]
+	let lista = ["pudim", "aipim", "céu", "no beleléu", "pastel", "irmão do jorel", "doguinho", "passarinho", "carinho", "baixinho"]
 	return lista[Math.floor(Math.random()*lista.length) ];
 }
+
 
 
 
