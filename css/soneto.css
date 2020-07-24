@@ -10,8 +10,8 @@ body{
 }
 #sidebar {
 	position: fixed;
-	right: 850px;
-	top: 200px;
+	right: 10vw;
+	top: 40vh;
 }
 
 #poem{
