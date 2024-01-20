@@ -61,17 +61,17 @@ const tituloAdjetivo = () => {
 }
 
 const verboInfinitivo = () => {
-	let lista = ["amar", "beijar", "curtir", "viver", "contar", "dançar", "sambar", "sonhar", "buscar"];
+	let lista = ["amar", "beijar", "curtir", "viver", "contar", "dançar", "sambar", "sonhar", "buscar", "fritar", "rebolar", "festejar", "lamber", "namorar"];
 	return lista[Math.floor(Math.random()*lista.length) ];
 }
 
 const verboConjugado = () => {
-	let lista = ["quero", "vou", "preciso", "desejo", "espero", "nasci para"]
+	let lista = ["quero", "vou", "preciso", "desejo", "espero", "nasci para", "amo", "anseio", "existo para", "confesso"]
 	return lista[Math.floor(Math.random()*lista.length) ];
 }
 
 const substantivo = () => {
-	let lista = ["folia", "festa", "farra", "no bloco", "confete", "serpentina", "arlequim", "comlombina", "abadá", "trio", "samba", "lambida", "rolê"]
+	let lista = ["folia", "festa", "farra", "no bloco", "confete", "serpentina", "arlequim", "colombina", "abadá", "trio", "samba", "lambida", "rolê"]
 	return lista[Math.floor(Math.random()*lista.length) ];
 }
 
